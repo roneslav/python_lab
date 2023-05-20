@@ -1,7 +1,6 @@
 from PreciousStone import PreciousStone
 def main():
     precious_stone = PreciousStone('Diamond', 5, 'pink', 4, 25)
-
     print(precious_stone)
 
     total_price = precious_stone.get_total_price()
@@ -12,6 +11,10 @@ def main():
 
     precious_stone.increase_price(10)
     print("Total price per carat:", precious_stone.price_per_carat)
+
+    precious_stone.get_instance()
+    print(precious_stone.get_instance())
+
 
 if __name__ == "__main__":
     main()
