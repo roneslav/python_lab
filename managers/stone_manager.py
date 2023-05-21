@@ -1,7 +1,7 @@
 from models.stone import stone
 
 
-class StoneManager(Stone):
+class stone_manager(stone):
     def get_full_price(self):
         pass
 
