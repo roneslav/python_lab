@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 
-class Stone:
+class stone:
     def __init__(self, name, color):
         self.name = name
         self.color = color
