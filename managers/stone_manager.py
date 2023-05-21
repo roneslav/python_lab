@@ -1,4 +1,4 @@
-from models.Stone import Stone
+from models.stone import stone
 
 
 class StoneManager(Stone):
