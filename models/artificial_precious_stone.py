@@ -1,7 +1,7 @@
-from models.Stone import Stone
+from models.stone import stone
 
 
-class ArtificialPreciousStone(Stone):
+class artificial_precious_stone(stone):
     def __init__(self, name_of_laboratory, mass_in_grams, price_per_gram, color, shape, name):
         super().__init__(name, color)
         self.name_of_laboratory = name_of_laboratory
