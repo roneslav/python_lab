@@ -1,7 +1,7 @@
-from models.Stone import Stone
+from models.stone import stone
 
 
-class JewelryStone(Stone):
+class jewelry_stone(Stone):
     def __init__(self, name, color, carat, shape):
         super().__init__(name, color)
         self.carat = carat
