@@ -1,7 +1,7 @@
-from models.Stone import Stone
+from models.stone import stone
 
 
-class SemiPreciousStone(Stone):
+class semi_precious_stone(stone):
     def __init__(self, name, color, clarity, carat, shape):
         super().__init__(name, color)
         self.clarity = clarity
