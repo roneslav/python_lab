@@ -30,9 +30,9 @@ class ArtificialPreciousStone(Stone):
         self.shape = shape
 
     def __str__(self):
-        return f'Artificial precious stone: {self.name_of_laboratory},' \
-               f' {self.mass_in_grams}, {self.price_per_gram}, ' \
-               f' {self.color}, {self.shape}, {self.name} '
+        return f'Artificial precious stone: Name of laboratory: {self.name_of_laboratory},' \
+               f' Mass in grams: {self.mass_in_grams}, Price per gram: {self.price_per_gram}, ' \
+               f' Color: {self.color}, Shape: {self.shape}, Name: {self.name} '
 
     def get_full_price(self):
         """

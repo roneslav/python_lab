@@ -19,8 +19,8 @@ class SemiPreciousStone(Stone):
         self.shape = shape
 
     def __str__(self):
-        return f'Semi Precious Stone: {self.name}, {self.color}, ' \
-               f' {self.clarity}, {self.carat}, {self.shape}'
+        return f'Semi Precious Stone: Name: {self.name}, Color: {self.color}, ' \
+               f' Clarity: {self.clarity}, Carat: {self.carat}, Shape: {self.shape}'
 
     def get_full_price(self):
         """

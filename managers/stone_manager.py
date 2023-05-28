@@ -6,12 +6,27 @@ This module provides a StoneManager class for managing stones
 from models.stone import Stone
 
 
+def find_index_of_objects(stones):
+    result = [f'{index}: {item}' for index, item in enumerate(stones)]
+    return result
+
+
 class StoneManager(Stone):
     """
     Class: StoneManager
 
     This class provides all methods for managing stones
     """
+
+    def __len__(self):
+        return len(self)
+
+    def __getitem__(self, index):
+        return self[index]
+
+    def __iter__(self):
+        return iter(self)
+
     def get_full_price(self):
         """
         Method: get_full_price
@@ -46,3 +61,14 @@ class StoneManager(Stone):
         stones_that_are_circles = list(filter(lambda stones: 'circle' in stones.shape, self.stones))
         for stone in stones_that_are_circles:
             print(stone)
+
+    def in_list_full_price(self):
+        result = [stone.get_full_price() for stone in self.stones]
+        return result
+
+    def all(self):
+        return all(stone.clarity > 8 for stone in self.stones)
+
+    def any(self):
+        return any(stone.clarity > 8 for stone in self.stones)
+
