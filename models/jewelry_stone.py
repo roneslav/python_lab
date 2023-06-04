@@ -16,7 +16,7 @@ class JewelryStone(Stone):
         self.shape = shape
 
     def __str__(self):
-        return f'Jewelry Stone: {self.name}, {self.color}, {self.carat}, {self.shape}'
+        return f'Jewelry Stone: Name: {self.name}, Color: {self.color}, Carat: {self.carat}, Shape: {self.shape}'
 
     def get_full_price(self):
         """

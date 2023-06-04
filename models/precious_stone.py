@@ -13,7 +13,6 @@ class PreciousStone(Stone):
     # pylint: disable=too-many-arguments
     def __init__(self, carat, clarity, price_per_carat, color, shape, name):
         """
-
         :param carat:The weight of the precious stone in carats
         :param clarity:The clarity grade of the precious stone.
         :param price_per_carat:The price per carat of the precious stone.
@@ -28,8 +27,9 @@ class PreciousStone(Stone):
         self.shape = shape
 
     def __str__(self):
-        return f'Precious Stone: {self.carat}, {self.clarity}, {self.price_per_carat},' \
-               f' {self.color}, {self.shape}, {self.name} '
+        return f'Precious Stone: Carat: {self.carat}, Clarity: {self.clarity}, ' \
+               f'Price per carat: {self.price_per_carat},' \
+               f' Color: {self.color}, Shape: {self.shape}, Name: {self.name} '
 
     def get_total_price(self):
         """
@@ -64,3 +64,4 @@ class PreciousStone(Stone):
         """
         full_price = self.carat * self.price_per_carat
         return full_price
+

@@ -25,3 +25,7 @@ class Stone(ABC):
         Abstract method get_full_price
         :return: skip
         """
+
+    def attributes_by_type(self, data_type):
+        return {key: value for key, value in self.__dict__.items() if isinstance(value, data_type)}
+
