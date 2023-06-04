@@ -64,4 +64,3 @@ class PreciousStone(Stone):
         """
         full_price = self.carat * self.price_per_carat
         return full_price
-
