@@ -27,5 +27,8 @@ class Stone(ABC):
         """
 
     def attributes_by_type(self, data_type):
+        """
+        Method: attributes_by_type
+        :return: dictionary for data_type what we need
+        """
         return {key: value for key, value in self.__dict__.items() if isinstance(value, data_type)}
-
