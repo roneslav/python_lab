@@ -1,8 +1,8 @@
-from models.PreciousStone import PreciousStone
-from models.ArtificialPreciousStone import ArtificialPreciousStone
-from managers.StoneManager import StoneManager
-from models.JewelryStone import JewelryStone
-from models.SemiPreciousStone import SemiPreciousStone
+from models.precious_stone import PreciousStone
+from models.artificial_precious_stone import ArtificialPreciousStone
+from managers.stone_manager import StoneManager
+from models.jewelry_stone import JewelryStone
+from models.semi_precious_stone import SemiPreciousStone
 
 
 def main():
