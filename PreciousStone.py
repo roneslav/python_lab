@@ -1,5 +1,7 @@
 class PreciousStone:
-    def __init__(self, name="ros", carat=5, color="kfkf", clarity=3, price_per_carat=55):
+    instance = None
+
+    def __init__(self, name, carat, color, clarity, price_per_carat):
         self.name = name
         self.carat = carat
         self.color = color
@@ -23,6 +25,6 @@ class PreciousStone:
 
     @staticmethod
     def get_instance():
-        if not PreciousStone.instance:
-            PreciousStone.instance = PreciousStone()
+        if PreciousStone.instance is None:
+            PreciousStone.instance = PreciousStone('Diamond', 5, 'pink', 4, 25)
         return PreciousStone.instance
