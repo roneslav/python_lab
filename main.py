@@ -1,6 +1,8 @@
-from PreciousStone import PreciousStone
+from precious_stone import PreciousStone
+
+
 def main():
-    precious_stone = PreciousStone('Diamond', 5, 'pink', 4, 25)
+    precious_stone = PreciousStone.get_instance()
     print(precious_stone)
 
     total_price = precious_stone.get_total_price()
